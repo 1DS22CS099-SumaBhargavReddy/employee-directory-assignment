@@ -1,4 +1,4 @@
-📘 Employee Directory Dashboard
+# Employee Directory Dashboard
 🧾 Overview
 This repository contains the code for a React-based Employee Management Dashboard built as part of the Frontend Assignment for Ajackus.
 The app allows users to create, read, update, and delete (CRUD) employee records. It also provides capabilities for filtering, sorting, and searching employees — all within a responsive and elegantly styled UI.
