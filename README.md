@@ -1,71 +1,114 @@
-# Getting Started with Create React App
+📘 Employee Directory Dashboard
+🧾 Overview
+This repository contains the code for a React-based Employee Management Dashboard built as part of the Frontend Assignment for Ajackus.
+The app allows users to create, read, update, and delete (CRUD) employee records. It also provides capabilities for filtering, sorting, and searching employees — all within a responsive and elegantly styled UI.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+No backend is connected; data is managed in the browser using localStorage for persistence.
 
-## Available Scripts
+💻 Technologies Used (Frontend)
+Tech	Description
+React.js	Frontend framework for building the UI
+React Router	Routing between dashboard and form pages
+CSS (custom)	Responsive and multi-colored modern UI styling
+JavaScript (ES6+)	Core logic for state and interactivity
+localStorage	For storing and persisting employee data
 
-In the project directory, you can run:
+🌐 Deployment
+Optional: You can deploy this project using Netlify or Vercel.
+After deployment, add the live link here:
 
-### `npm start`
+📍Live Demo: https://your-app-name.netlify.app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+📦 How to Run Locally
+🔧 Installation Steps
+Clone the repository:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/employee-directory-react.git
+Navigate to the project directory:
 
-### `npm test`
+bash
+Copy
+Edit
+cd employee-directory-react
+Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+Copy
+Edit
+npm install
+Start the development server:
 
-### `npm run build`
+bash
+Copy
+Edit
+npm start
+Open your browser and visit:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+arduino
+Copy
+Edit
+http://localhost:3000
+🔍 Features
+Feature	Description
+✅ Create New Employee	Add a new employee record with first name, email, etc.
+📄 View Employees	View all employees in a responsive card/grid layout
+✏️ Edit Existing Employee	Update employee details using a pre-filled form
+❌ Delete Employee	Remove an employee from the dashboard
+🔎 Search Employees	Search by name or email
+🎛 Filter Options	Filter by first name, department, or role
+↕️ Sort Employees	Sort alphabetically by first name or department
+📱 Responsive UI	Optimized for mobile, tablet, and desktop screens
+💾 localStorage Persistence	Data is saved across browser reloads with no backend needed
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📡 Endpoints (If Backend Were Connected)
+Since this is a frontend-only app, the data is stored in localStorage.
+But if integrated with a backend, the typical RESTful endpoints would be:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Action	Endpoint	Method
+Get all employees	/employees	GET
+Add employee	/employees	POST
+Edit employee	/employees/:id	PUT / PATCH
+Delete employee	/employees/:id	DELETE
 
-### `npm run eject`
+🔗 You can simulate these using tools like json-server or mockapi.io if needed.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+📁 Folder Structure
+graphql
+Copy
+Edit
+employee-directory-react/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/      # EmployeeCard, FilterBar, Form, Pagination
+│   ├── pages/           # Dashboard and FormPage (route-based views)
+│   ├── data.js          # Initial mock employee data
+│   ├── App.js           # Main routing logic
+│   ├── App.css          # Custom multi-colored responsive styling
+│   └── index.js         # Entry point
+🧠 Reflection
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+✅ Challenges Faced
+Managing shared employee state between dashboard and form routes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Implementing filter + sort + search in a combined logic flow.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Designing a creative yet clean UI without any UI framework (e.g., Bootstrap).
 
-## Learn More
+🔧 What I’d Improve with More Time
+Add image/avatar upload support.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Backend integration with Express or Firebase.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Role-based access (admin vs viewer).
 
-### Code Splitting
+Export data as CSV.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Dark mode toggle 🌙
 
-### Analyzing the Bundle Size
+👨‍💻 Author
+Developed by Kaipa Suma Bhargav Reddy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# employee-directory-assignment" 
